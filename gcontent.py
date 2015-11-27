@@ -1,6 +1,5 @@
 def GCcontent (filename):
-	file = open(filename)
-	data = file.read()
+	data = filename.read()
 	datasplit = data.split("\n")
 	data2 = "".join(datasplit)
 	entries = []
@@ -17,4 +16,7 @@ def GCcontent (filename):
 			values.append(data2[i:i+14]) # El +14 reflecteix els espais que ocupa el codi
 			values.append(GC)
 	mGC = max(values[1::2])
+	print "The highest GC content can be found in:"
 	print(values[values.index(mGC)-1],mGC)
+	
+	
