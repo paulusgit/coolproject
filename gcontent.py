@@ -1,5 +1,4 @@
 def GCcontent (filename):
-# My name is Alice and I am also part of the team.
 	def get_sequences(file):
 	list = [] 
 	header= file.readline()
@@ -23,3 +22,7 @@ def GCcontent (filename):
 	if c == 'C' or c == 'G':
 		cnt = cnt+1
 	return float(cnt) / len(seq)
+print "The highest GC content can be found in:"
+	
+	
+
